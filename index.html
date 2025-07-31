@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <div class="nav">
+    <p>Expense Tracker</p>
+    <div class="nav-btn">
+      <h3 id="balance" style="color: white;">Balance: ₹0.00</h3>
+    </div>
+  </div>
+
+  <!-- Message Output -->
+  <p class="message"></p>
+
+  <!-- Main Container -->
+  <div class="container">
+
+    <!-- Account Creation -->
+    <div class="cat-dilog">
+      <h3>Create Account</h3>
+      <input type="text" id="accountinput" placeholder="Create Account (e.g., Cash)" />
+      <button class="addbtn" id="addAcct">Add</button>
+      <ul id="accountList"></ul>
+    </div>
+
+    <!-- Category Creation -->
+    <div class="cat-dilog">
+      <h3>Create Category</h3>
+      <input type="text" id="cateInput" placeholder="Create Category (e.g., Food)" />
+      <button class="addbtn" id="addCategory">Add</button>
+      <ul id="categoryList"></ul>
+    </div>
+
+    <!-- Transaction Input Section -->
+    <div class="cat-dilog">
+      <h3>Add Transaction</h3>
+
+      <div class="income-exp">
+        <button id="incomeBtn">Income</button>
+        <button id="expenseBtn">Expenditure</button>
+      </div>
+
+      <label for="transectionAccount">Account:</label>
+      <select id="transectionAccount">
+        <option value="">-- Select Account --</option>
+      </select>
+
+      <label for="transectionCategory">Category:</label>
+      <select id="transectionCategory">
+        <option value="">-- Select Category --</option>
+      </select>
+
+      <input type="number" id="amountInput" placeholder="Enter amount" />
+      <input type="text" id="descInput" placeholder="Enter description (optional)" />
+      <button class="addbtn" id="addTransaction">Add Transaction</button>
+    </div>
+  </div>
+
+  <!-- TransactionList -->
+  <div class="cat-dilog full">
+    <h3>Transactions</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Account</th>
+          <th>Category</th>
+          <th>Transaction</th>
+          <th>Description</th>
+          <th>-</th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+  </div>
+
+  <script src="srr.js"></script>
+</body>
+
+</html>

@@ -25,3 +25,10 @@
 #expenseBtn {
     background-color: rgb(252, 234, 234);
 }
+
+.active {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.03);
+    font-weight: bold;
+}

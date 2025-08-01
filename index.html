@@ -35,7 +35,13 @@
     <!-- Category Creation -->
     <div class="cat-dilog">
       <h3>Create Category</h3>
-      <input type="text" id="cateInput" placeholder="Create Category (e.g., Food)" />
+      <!-- <input type="text" id="cateInput" placeholder="Create Category (e.g., Food)" /> -->
+      <select name="categoryOpction" id="cateop">
+        <option value="#">Select Category</option>
+        <option id = "income" value="income">Income</option>
+        <option id = "income" value="expence">Expence</option>
+      </select>
+      <input type="text" id="cateInput" placeholder="Enter category name" />
       <button class="addbtn" id="addCategory">Add</button>
       <ul id="categoryList"></ul>
     </div>
@@ -54,9 +60,9 @@
         <option value="">-- Select Account --</option>
       </select>
 
-      <label for="transectionCategory">Category:</label>
+      <label for="transectionCategory">Category Type:</label>
       <select id="transectionCategory">
-        <option value="">-- Select Category --</option>
+        <option value="">-- Select Category Type --</option>
       </select>
 
       <input type="number" id="amountInput" placeholder="Enter amount" />
@@ -73,9 +79,11 @@
         <tr>
           <th>Account</th>
           <th>Category</th>
+          <th>Type</th>
           <th>Transaction</th>
           <th>Description</th>
-          <th>-</th>
+          <th>Action</th>
+          <th>Edit</th>
         </tr>
       </thead>
       <tbody id="table-body"></tbody>

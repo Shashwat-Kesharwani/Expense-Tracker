@@ -102,6 +102,8 @@ addCategory.addEventListener("click", () => {
     closebtn.style.backgroundColor = "red";
     closebtn.innerText = "Close";
     closebtn.style.marginTop = "1rem";
+    closebtn.style.marginLeft = "1rem";
+    closebtn.style.width = "70px";
 
     let inputIncomeradio = document.createElement("input");
     inputIncomeradio.classList.add("rdobtn");
@@ -133,6 +135,8 @@ addCategory.addEventListener("click", () => {
 
     let NewFormBtn = document.createElement("button");
     NewFormBtn.innerText = "Add Category";
+    NewFormBtn.style.width = "130px";
+
     NewFormBtn.classList.add("addbtn");
 
     NewFormBtn.addEventListener("click", (e) => {

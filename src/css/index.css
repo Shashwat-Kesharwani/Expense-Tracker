@@ -79,12 +79,12 @@ ol li {
 }
 
 .categoryform {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 500px;
-    height: 460px;
+    width: 300px;
+    height: 260px;
     z-index: 200;
     background-color: #eaf2ff;
     box-shadow: 0 4px 8px rgba(26, 13, 13, 0.1);
@@ -110,4 +110,19 @@ ol li {
 
 .hidden {
     display: none;
+}
+
+.editTable {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 440px;
+    z-index: 200;
+    background-color: #eaf2ff;
+    box-shadow: 0 4px 8px rgba(26, 13, 13, 0.1);
+    border-radius: 8px;
+    padding: 1rem;
+
 }

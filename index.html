@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Expense Tracker</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="src/css/index.css" />
+  <link rel="stylesheet" href="src/css/style.css" />
 </head>
 
 <body>
@@ -34,16 +34,28 @@
 
     <!-- Category Creation -->
     <div class="cat-dilog">
-      <h3>Create Category</h3>
-      <!-- <input type="text" id="cateInput" placeholder="Create Category (e.g., Food)" /> -->
-      <select name="categoryOpction" id="cateop">
+      <h3>Select Category</h3>
+      <div class="cattype">
+        <div class="income">Income
+          <ol id="incomeCategoryList">
+            </ul>
+        </div>
+        <div class="expense">Expense
+          <ol id="expenseCategoryList">
+            </ul>
+        </div>
+
+      </div>
         <option value="#">Select Category</option>
-        <option id = "income" value="income">Income</option>
-        <option id = "income" value="expence">Expence</option>
+        <option id="income" value="income">Income</option>
+        <option id="income" value="expence">Expence</option>
       </select>
-      <input type="text" id="cateInput" placeholder="Enter category name" />
       <button class="addbtn" id="addCategory">Add</button>
       <ul id="categoryList"></ul>
+      <input type="text" id="cateInput" placeholder="Enter category name" />
+     <input type="text" id="cateInput" placeholder="+" /> -->
+      <button class="addbtn" id="addmore">Add New Category </button> 
+
     </div>
 
     <!-- Transaction Input Section -->
@@ -72,16 +84,18 @@
   </div>
 
   <!-- TransactionList -->
-  <div class="cat-dilog full">
-    <h3>Transactions</h3>
+  <div class="full">
+    <h1 style="padding: 1rem;">Transactions</h1>
     <table>
       <thead>
         <tr>
+          <th>ID</th>
           <th>Account</th>
           <th>Category</th>
           <th>Type</th>
           <th>Transaction</th>
           <th>Description</th>
+          <th>Date</th>
           <th>Action</th>
           <th>Edit</th>
         </tr>
@@ -90,7 +104,13 @@
     </table>
   </div>
 
-  <script src="srr.js"></script>
+  <script type="module" src="src/js/data.js"></script>
+  <script type="module" src="src/js/dom.js"></script>
+  <script type="module" src="src/js/function.js"></script>
+  <script type="module" src="srr.js"></script>
+</body>
+
+
 </body>
 
 </html>
